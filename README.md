@@ -61,4 +61,4 @@ Demo:
 <br><img src="images/AVR-DA_led_blink_pwm.gif" width="500">
 
 ## Summary
-The demo shows shows how to generate a PWM signal using Timer/Counter Type A (TCA). The output of the TCA is connected to the on-board LED of the AVR128DA48 Curiosity Nano board and a waveform signal is generated.
+The demo shows how to generate a PWM signal using Timer/Counter Type A (TCA). The output of the TCA is connected to the on-board LED of the AVR128DA48 Curiosity Nano board and a waveform signal is generated.
