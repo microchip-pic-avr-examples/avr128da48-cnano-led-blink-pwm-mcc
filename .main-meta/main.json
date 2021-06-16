@@ -2,9 +2,9 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "2.0.0",
+        "metaDataVersion": "1.0.3",
         "name": "com.microchip.mcu8.mplabx.project.avr128da48-cnano-led-blink-pwm-mcc",
-        "version": "1.0.3",
+        "version": "2.0.0",
         "displayName": "LED Blink using PWM",
         "projectName": "avr128da48-cnano-led-blink-pwm-mcc",
         "shortDescription": "This repository provides an MPLAB X project with a MCC generated code example for an LED blink driven by a PWM signal. The example demonstrates how to generate a PWM signal using a timer",
