@@ -12,11 +12,11 @@ More details and code examples on the AVR128DA48 can be found at the following l
 
 
 ## Software Used
-- MPLAB® X IDE 5.40 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-- MPLAB® XC8 2.20 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-- MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-- MPLAB® Code Configurator (MCC) Device Libraries 8-bit AVR MCUs 2.3.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-- AVR-Dx 1.2.52 or newer Device Pack
+- MPLAB® X IDE 5.45 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® XC8 2.31 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
+- MPLAB® Code Configurator (MCC) 4.1.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
+- MPLAB® Code Configurator (MCC) Device Libraries 8-bit AVR MCUs 2.5.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
+- AVR-Dx 1.8.112 or newer Device Pack
 
 
 ## Hardware Used
@@ -28,10 +28,14 @@ The AVR128DA48 Curiosity Nano Development Board is used as test platform
 
 The following configurations must be made for this project:
 
+Clock:
+- 4 MHz clock with Prescaler Division of 16 (250 kHz actual)
+
 TCA1:
 - Single-slope PWM Mode
-- Compare channel 2 enabled
-- Input clock 4Mhz divided by 16
+- Compare channel 2 enabled with 50% duty cycle
+- System clock 250 kHz
+- Requested timeout 262ms
 
 |Pin           | Configuration      |
 | :----------: | :----------------: |

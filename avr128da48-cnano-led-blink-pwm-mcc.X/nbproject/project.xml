@@ -4,7 +4,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>avr128da48-cnano-led-blink-pwm-mcc</name>
-            <creation-uuid>aa8d8729-3632-40d6-baf4-b24e794e36e0</creation-uuid>
+            <creation-uuid>ebc2826a-6db8-433f-88f6-fbd245148ba2</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>

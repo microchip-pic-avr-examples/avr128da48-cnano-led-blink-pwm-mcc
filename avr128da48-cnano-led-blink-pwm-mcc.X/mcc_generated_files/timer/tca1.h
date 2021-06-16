@@ -1,3 +1,12 @@
+/**
+  @Company
+    Microchip Technology Inc.
+
+  @Description
+    This Source file provides APIs.
+    Generation Information :
+    Driver Version    :   2.0.0
+*/
 /*
 Copyright (c) [2012-2020] Microchip Technology Inc.  
 
@@ -31,17 +40,53 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
     third party licenses prohibit any of the restrictions described here, 
     such restrictions will not apply to such third party software.
 */
-#include "mcc_generated_files/system/system.h"
 
-/*
-    Main application
-*/
 
-int main(void)
-{
-    SYSTEM_Initialize();
+#ifndef TCA1_H_INCLUDED
+#define TCA1_H_INCLUDED
 
-    while(1)
-    {
-    }    
+#include <stdint.h>
+#include <stdbool.h>
+#include "../system/system.h"
+#include "timer_interface.h"
+#include "../system/utils/compiler.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/**
+ * \brief Initialize tca interface
+ *
+ * \return Initialization status.
+ */
+    
+typedef void (*TCA1_cb_t)(void);    
+
+extern const struct TMR_INTERFACE TCA1_Interface;
+
+void TCA1_Initialize(void);
+void TCA1_Start(void);
+void TCA1_Stop(void);
+void TCA1_OverflowCallbackRegister(TCA1_cb_t cb);
+void TCA1_Compare0CallbackRegister(TCA1_cb_t cb);
+void TCA1_Compare1CallbackRegister(TCA1_cb_t cb);
+void TCA1_Compare2CallbackRegister(TCA1_cb_t cb);
+void TCA1_EnableInterrupt(void);
+void TCA1_DisableInterrupt(void);
+uint16_t TCA1_Read(void);
+void TCA1_Write(uint16_t timerVal);
+void TCA1_ClearOverflowInterruptFlag(void);
+bool TCA1_IsOverflowInterruptEnabled(void);
+void TCA1_ClearCMP0InterruptFlag(void);
+bool TCA1_IsCMP0InterruptEnabled(void);
+void TCA1_ClearCMP1InterruptFlag(void);
+bool TCA1_IsCMP1InterruptEnabled(void);
+void TCA1_ClearCMP2InterruptFlag(void);
+bool TCA1_IsCMP2InterruptEnabled(void);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif /* TCA1_H_INCLUDED */
