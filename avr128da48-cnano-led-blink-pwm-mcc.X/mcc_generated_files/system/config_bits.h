@@ -1,14 +1,15 @@
 /**
- * CONFIGURATION BITS Generated Driver Source File
+ * CONFIGURATION BITS Generated Driver Header File
  * 
- * @file config_bits.c
+ * @file config_bits.h
  * 
- * @ingroup config_bitsdriver
+ * @defgroup config_bitsdriver Configuration Bits Driver 
  * 
- * @brief This file contains the generated Device Configuration Bits file.
+ * @brief This file contains the generated header file for the Configuration bits driver.
  *
  * @version Driver Version 1.0.4
 */
+    
 /*
 © [2023] Microchip Technology Inc. and its subsidiaries.
 
@@ -30,18 +31,12 @@
     THIS SOFTWARE.
 */
 
-#include <avr/io.h>
+#ifndef CONFIG_BITS_H
+#define	CONFIG_BITS_H
 
+#include "../system/clock.h"
+
+#endif //CONFIG_BITS_H
 /**
- * Configures the Fuse bits.
- */
-FUSES = 
-{
-  .BODCFG = ACTIVE_DISABLE_gc | LVL_BODLEVEL0_gc | SAMPFREQ_128Hz_gc | SLEEP_DISABLE_gc,
-  .BOOTSIZE = 0x0,
-  .CODESIZE = 0x0,
-  .OSCCFG = CLKSEL_OSCHF_gc,
-  .SYSCFG0 = CRCSEL_CRC16_gc | CRCSRC_NOCRC_gc | RSTPINCFG_GPIO_gc,
-  .SYSCFG1 = SUT_0MS_gc,
-  .WDTCFG = PERIOD_OFF_gc | WINDOW_OFF_gc,
-};
+ End of File
+*/
