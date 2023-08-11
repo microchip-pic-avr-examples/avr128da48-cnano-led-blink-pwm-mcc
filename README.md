@@ -1,8 +1,8 @@
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
 
-# AVR128DA48 LED Blink using PWM Code Example
+# AVR128DA48 LED Blink Using a PWM Signal Code Example
 
-This repository provides a MPLAB X project with a MCC generated code example for an LED blink driven by a PWM signal. The example demonstrates how to generate a PWM signal using a timer. The output waveform is connected to the on-board LED. The PWM duty cycle value is set at 50%. For half of the period the LED is turned ON, and for the other half the LED is turned OFF.
+This repository provides an MPLAB® X project with an MPLAB Code Configurator (MCC) generated code example for an LED blink driven by a Pulse-width modulation (PWM) signal. The example demonstrates how to generate a PWM signal using a timer. The output waveform is connected to the on-board LED. The PWM duty cycle value is set at 50%. For half of the period the LED is turned ON, and for the other half the LED is turned OFF.
 
 ## Related Documentation
 
@@ -15,8 +15,8 @@ More details and code examples on the AVR128DA48 can be found at the following l
 
 ## Software Used
 
-- [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.10 or newer
-- [MPLAB® XC8](http://www.microchip.com/mplab/compilers) 2.41 or newer
+- [MPLAB X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.10 or newer
+- [MPLAB XC8](http://www.microchip.com/mplab/compilers) 2.41 or newer
 - [AVR-Dx Device Family Pack](https://packs.download.microchip.com/) v2.3.272 or newer
 
 ## Hardware Used
@@ -26,7 +26,7 @@ More details and code examples on the AVR128DA48 can be found at the following l
 
 ## Operation
 
-To program the Curiosity Nano board with this MPLAB® X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
+To program the Curiosity Nano board with this MPLAB X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
 
 ## Setup
 
@@ -90,10 +90,10 @@ This chapter shows how to use the MPLAB X IDE to program an AVR® device with an
   <br><img src="images/Program_Clean_and_Build.PNG" width="400">
 
 5. Select AVRxxxxx Curiosity Nano in the Connected Hardware Tool section of the project settings:
-  <br>Right click on the project and click Properties.
-  <br>Click on the arrow under the Connected Hardware Tool.
-  <br>Select the AVRxxxxx Curiosity Nano (click on the SN). 
-  <br>Click Apply and then OK.
+  <br>Right click on the project and click Properties
+  <br>Click on the arrow under the Connected Hardware Tool
+  <br>Select the AVRxxxxx Curiosity Nano (click on the SN)
+  <br>Click **Apply** and then **OK**
   <br><img src="images/Program_Tool_Selection.PNG" width="600">
 
 6. Program the project to the board:
@@ -104,5 +104,5 @@ This chapter shows how to use the MPLAB X IDE to program an AVR® device with an
 
 - [Back to Setup](#setup)
 - [Back to Demo](#demo)
-- [Back to Summary](#summary) 
-- [Back to Top](#avr128da48-led-blink-using-pwm-code-example)
+- [Back to Summary](#summary)
+- [Back to Top](#avr128da48-led-blink-using-a-pwm-signal-code-example)
